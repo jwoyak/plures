@@ -1,5 +1,5 @@
 # profilium
-A Chrome/Chromium Profile Shortcut Manager for Linux
+### *A Chrome/Chromium Profile Shortcut Manager for Linux*
 
 This little app was created to fix a problem that a lot of people seem to have: Ubuntu does not seem to correctly handle the way that the Google Chrome/Chromium browsers create user profiles. 
 
@@ -12,8 +12,8 @@ For example, perhaps you have one Chrome profile for work and another for home.
   
 This is why I created Profilium.
 
-*Note: This app has only been tested in Ubuntu 22.10 with Google Chrome (Stable) 109.0.5414.74 (Official Build). It may work just fine in Chromium and/or other versions of Chrome, but YMMV.
+*Note: This app has only been tested in Ubuntu 22.10 with Google Chrome (Stable) 109.0.5414.74 (Official Build). It may work just fine in Chromium and/or other versions of Chrome, but YMMV.*
 
-### To Do###
-[] Add support for setting Chrome App settings
-[] Build automated testing (and test for more browsers/platforms)
+### To Do:
+[ ] Add support for setting Chrome App settings
+[ ] Build automated testing (and test for more browsers/platforms)
