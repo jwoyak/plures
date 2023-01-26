@@ -21,7 +21,7 @@ This is why I created Profilium.
 ### Installation:
 1. Clone the repo
 
-```git clone [URL]```
+```git clone https://github.com/jwoyak/profilium.git```
 
 2. Install Profilium
 
