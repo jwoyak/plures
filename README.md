@@ -3,7 +3,7 @@
 
 ---
 
-This little app was createdto fix a problem that a lot of people seem to have: Ubuntu does not seem to correctly handle the way that the Google Chrome/Chromium browsers create user profiles. 
+This little app was created to fix a problem that a *lot* of people seem to have: Ubuntu does not seem to correctly handle the way that the Google Chrome/Chromium browsers create user profiles. 
 
 For example, perhaps you have one Chrome profile for work and another for home. 
 - On Windows, you can simply create each profile in Chrome, go into the profile settings, and click "Create Desktop Shortcut", and then drag that onto your taskbar.
