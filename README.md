@@ -14,6 +14,8 @@ This is why I created Profilium.
 
 *Note: This app has only been tested in Ubuntu 22.10 with Google Chrome (Stable) 109.0.5414.74 (Official Build). It may work just fine in Chromium and/or other versions of Chrome, but YMMV.*
 
+---
+
 ### To Do:
-[ ] Add support for setting Chrome App settings
-[ ] Build automated testing (and test for more browsers/platforms)
+- [ ] Add support for setting Chrome App settings
+- [ ] Build automated testing (and test for more browsers/platforms)
