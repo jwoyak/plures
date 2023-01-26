@@ -1,7 +1,9 @@
 # Profilium
 ### *A Chrome/Chromium Profile Shortcut Manager for Linux*
+
 ---
-This little app was created to fix a problem that a lot of people seem to have: Ubuntu does not seem to correctly handle the way that the Google Chrome/Chromium browsers create user profiles. 
+
+This little app was createdto fix a problem that a lot of people seem to have: Ubuntu does not seem to correctly handle the way that the Google Chrome/Chromium browsers create user profiles. 
 
 For example, perhaps you have one Chrome profile for work and another for home. 
 - On Windows, you can simply create each profile in Chrome, go into the profile settings, and click "Create Desktop Shortcut", and then drag that onto your taskbar.
@@ -13,16 +15,27 @@ For example, perhaps you have one Chrome profile for work and another for home.
 This is why I created Profilium.
 
 *Note: This app has only been tested in Ubuntu 22.10 with Google Chrome (Stable) 109.0.5414.74 (Official Build). It may work just fine in Chromium and/or other versions of Chrome, but YMMV.*
+
 ---
+
 ### Installation:
 1. Clone the repo
+
 ```git clone [URL]```
+
 2. Install Profilium
+
 ```[commands here]```
+
 ---
+
 ### Usage:
-[syntax here]
+
+*[syntax here]*
+
 ---
+
 ### To Do:
+
 - [ ] Add support for setting Chrome App settings
 - [ ] Build automated testing (and test for more browsers/platforms)
