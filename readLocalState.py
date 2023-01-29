@@ -46,9 +46,6 @@ js = json.loads(data)
 for profileName in profileNames:
     profileDict = pd.json_normalize(js['profile']['info_cache'][profileName]).to_dict()
 
-    # Get Chrome profile name
-    CPname = profileDict['name'][0]
-
     # Get user_name
     user_name = profileDict['user_name'][0]
 
@@ -57,9 +54,6 @@ for profileName in profileNames:
 
     # Get user account picture URL
     picURL = profileDict['last_downloaded_gaia_picture_url_with_size'][0]
-
-    # Print values
-    #print(CPname + ':' + profileName + ':' + user_name + ':' + pfPath + ':' + picURL)
 
     # Build wmClass name for desktop entry
     # 1. start with 'chrome'
