@@ -37,8 +37,11 @@ This is why I created Profilium.
 
 ### To Do:
 - [ ] Basic Functionality
+  - [x] Develop basic algorithm to generate desktop entry Exec commands
   - [ ] Add method to create full desktop entry file
   - [ ] Add methods to manage (list, add, remove) desktop entries in list
+  - [ ] Create GUI in Kivy
+  - [ ] Create install/uninstall helper scripts  
 - [ ] Additional Features
   - [ ] Add support for setting Chrome App settings
   - [ ] Build automated testing (and test for more browsers/platforms)
