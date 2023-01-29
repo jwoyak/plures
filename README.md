@@ -1,5 +1,5 @@
 # Profilium
-### *A Chrome/Chromium Profile Shortcut Manager for Linux*
+### *A Chrome/Chromium Profile Gnome Desktop Entry Manager for Linux*
 
 ---
 
