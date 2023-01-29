@@ -36,6 +36,9 @@ This is why I created Profilium.
 ---
 
 ### To Do:
-
-- [ ] Add support for setting Chrome App settings
-- [ ] Build automated testing (and test for more browsers/platforms)
+- [ ] Basic Functionality
+  - [ ] Add method to create full desktop entry file
+  - [ ] Add methods to manage (list, add, remove) desktop entries in list
+- [ ] Additional Features
+  - [ ] Add support for setting Chrome App settings
+  - [ ] Build automated testing (and test for more browsers/platforms)
