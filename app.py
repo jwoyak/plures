@@ -67,7 +67,7 @@ class profileManager(Gtk.Window):
         detailBox.set_homogeneous(False)
         detailBox.set_margin_top(20)
 
-        profileList = Gtk.ListStore(GdkPixbuf.Pixbuf, str, str)
+        profileList = Gtk.ListStore(GdkPixbuf.Pixbuf, str, str, str)
 
         # for each profile in profilePaths, add to profileDic dictionary
 
@@ -100,7 +100,7 @@ class profileManager(Gtk.Window):
             icon = GdkPixbuf.Pixbuf.new_from_file_at_size(picPath, 30, 30)
 
             # Append row to the listStore
-            profileList.append([icon, user_name, profileName])
+            profileList.append([icon, user_name, profileName, profileNameString])
             
 
         treeview = Gtk.TreeView()
@@ -134,12 +134,19 @@ class profileManager(Gtk.Window):
         profileDirCol.add_attribute(profileDirName, "text", 2)
         profileDirCol.set_sort_column_id(2)
 
+        wmClassText = Gtk.CellRendererText()
+        wmClassCol = Gtk.TreeViewColumn("wmClass")
+        treeview.append_column(wmClassCol)
+        wmClassCol.pack_start(wmClassText, True)
+        wmClassCol.add_attribute(wmClassText, "text", 3)
+
         self.profileDetail = Gtk.Label()
         self.profileDetail.set_text("")
         self.profileDetail.set_halign(Gtk.Align.START)
         detailBox.add(self.profileDetail)        
         treeview_selection = treeview.get_selection()
         treeview_selection.connect('changed', self.on_tree_selection_changed)
+
 
     # Callback to handle getting/using list selection
     def on_tree_selection_changed(self, profileSelection):
@@ -151,8 +158,9 @@ class profileManager(Gtk.Window):
             # Read the user's local application dir into localAppDir
             localAppDir = desktopPath
 
+            selNameString = (model[treeiter][3])
             # Check if the selected profile has a desktop entry
-            desktopFile = localAppDir + selUser + ".desktop"
+            desktopFile = localAppDir + selNameString + ".desktop"
             if(os.path.exists(desktopFile)):
                 dfExists = True
             else:
@@ -160,14 +168,11 @@ class profileManager(Gtk.Window):
 
             # Build a multiline label to show all the info
             selString = (
-                "Desktop Entry Path:\n" + localAppDir + "\n" +
-                "\n" +
-                "Selected Profile:\n" + selUser +" \n"
-                "\n" +
-                "Desktop File:\n" + str(desktopFile) + "\n"
-                "\n" +
+                "Desktop Entry Path:\n" + localAppDir + "\n" + "\n" +
+                "Selected Profile:\n" + selUser +" \n" + "\n" +
+                "Desktop File:\n" + str(desktopFile) + "\n" + "\n" +
                 "File Exists:\n" + str(dfExists) + "\n"
-                )
+            )
 
             self.profileDetail.set_text(selString)
 
